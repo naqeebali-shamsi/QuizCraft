@@ -1,11 +1,11 @@
 const axios = require('axios');
 const functions = require("@google-cloud/functions-framework");
-
+const NLP_API_KEY = process.env.GOOGLE_NLP_API_KEY //replace with your NLP API Key in in your env vars
 module.exports.main = async (req, res) => {
     try {
         const question  = req.body;
         const response = await axios.post(
-            'https://language.googleapis.com/v1beta2/documents:classifyText?key=AIzaSyD_DBTbYrjuBQCBnlM4EZh_vkZb0o4nJ4c', //replace with your NLP API Key
+            `https://language.googleapis.com/v1beta2/documents:classifyText?key=${NLP_API_KEY}`,
             {
                 document: {
                     content: question + question + question,
