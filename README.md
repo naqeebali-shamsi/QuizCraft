@@ -1,5 +1,5 @@
 # Quizcraft
-# Multi-Cloud Trivia Game
+# Multi-Cloud Serverless Trivia Game
 
 This project is a trivia game built on a multi-cloud architecture, utilizing the services offered by AWS and GCP. The game will employ various services such as AWS Lambda, GCP Firestore, Chat GPT, DynamoDB, SQS, SNS, Pub/Sub, QuickSight, GCP DataStudio, Looker Studio, and more.
 
